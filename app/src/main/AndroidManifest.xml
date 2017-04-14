@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.huxley.wii.wii">
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:name=".WiiYlApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--<activity android:name=".page.main.HomeActivity">-->
+        <!--</activity>-->
+        <!--<activity android:name=".page.login.LoginActivity"/>-->
+        <!--<activity android:name=".page.editInfo.EditInfoActivity"/>-->
+        <!--<activity android:name=".page.editSong.EditSongActivity"/>-->
+        <!--<activity-->
+        <!--android:name=".page.editText.EditTextActivity"-->
+        <!--android:windowSoftInputMode="stateAlwaysVisible"/>-->
+
+        <!--<activity android:name=".SMSBomb.rule.SMSBombRuleActivity"/>-->
+        <!--<activity android:name=".SMSBomb.verify.SMSBombVerifyActivity"/>-->
+        <!--<activity android:name=".SMSBomb.bomb.SMSBombFragment"/>-->
+        <!--<activity android:name=".SMSBomb.wait.SMSBombWaitActivity">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN"/>-->
+        <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!--<activity android:name="com.huxley.wii.wii.test.TestActivity">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN"/>-->
+        <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity android:name=".page.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

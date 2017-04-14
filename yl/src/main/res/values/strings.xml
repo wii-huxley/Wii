@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">YL</string>
+
+    <string name="press_again_exit">再按一次退出</string>
+
+    <!-- permission -->
+    <string name="permission_ok">确定</string>
+    <string name="permission_close">确定</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_setting">设置</string>
+    <string name="permission_denied_msg_default">可以到app设置界面开启权限</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

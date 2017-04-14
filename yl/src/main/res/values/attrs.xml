@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="input_box">
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_color_des" format="color"/>
+        <attr name="text_color_content" format="color"/>
+        <attr name="text_des" format="string"/>
+        <attr name="text_hint" format="string"/>
+        <attr name="text_content" format="string"/>
+        <attr name="text_separator" format="string"/>
+        <attr name="spinner_data" format="reference"/>
+        <attr name="edit_input_type">
+            <enum name="user_name" value="0"/>
+            <enum name="password" value="1"/>
+            <enum name="phone_num" value="2"/>
+            <enum name="num" value="3"/>
+        </attr>
+        <attr name="input_box_type">
+            <enum name="edit" value="0"/>
+            <enum name="select" value="1"/>
+            <enum name="jump_select" value="2"/>
+            <enum name="spinner" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

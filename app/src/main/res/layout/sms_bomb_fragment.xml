@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="手机号："
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_m"/>
+
+                <EditText
+                    android:id="@+id/tv_phone_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:hint="@string/base_required_field"
+                    android:lines="1"
+                    android:textColor="@color/regent_gray"
+                    android:inputType="phone"
+                    android:textColorHint="@color/loblolly"
+                    android:textSize="@dimen/text_size_m"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="轰炸数："
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_m"/>
+
+                <EditText
+                    android:id="@+id/tv_times"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:hint="@string/base_required_field"
+                    android:lines="1"
+                    android:textColor="@color/regent_gray"
+                    android:inputType="number"
+                    android:textColorHint="@color/loblolly"
+                    android:textSize="@dimen/text_size_m"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="次"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_m"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="发什么："
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_m"/>
+
+                <EditText
+                    android:id="@+id/tv_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:hint="@string/base_required_field"
+                    android:lines="1"
+                    android:textColor="@color/regent_gray"
+                    android:textColorHint="@color/loblolly"
+                    android:textSize="@dimen/text_size_m"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="间隔时："
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_m"/>
+
+                <EditText
+                    android:id="@+id/tv_interval"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:hint="@string/base_required_field"
+                    android:lines="1"
+                    android:textColor="@color/regent_gray"
+                    android:textColorHint="@color/loblolly"
+                    android:text="2"
+                    android:textSize="@dimen/text_size_m"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="S"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_m"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="默认每隔两秒发送一条指定内容的短信到指定的移动号码"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_m"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/lily_white"
+        android:text="开始轰炸"/>
+</LinearLayout>

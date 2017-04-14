@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile "com.android.support:support-v4:${supportLibVersion}"
+    compile "com.android.support:cardview-v7:${supportLibVersion}"
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.jakewharton.rxbinding:rxbinding:${rxbinding}"
+    compile "io.reactivex.rxjava2:rxandroid:${rxandroid}"
+    compile "io.reactivex.rxjava2:rxjava:${rxjava}"
+    compile "com.zhy:base-rvadapter:${rvadapter}"
+    compile "com.zhy:base-adapter:${adapter}"
+    compile "pl.droidsonroids.gif:android-gif-drawable:${androidGifDrawable}"
+    compile "com.jakewharton:butterknife:${butterknife}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterknife}"
+    compile "com.google.code.gson:gson:${gson}"
+    compile "org.litepal.android:core:${litepal}"
+    compile "org.greenrobot:eventbus:${eventbus}"
+    compile project(':dialogplus')
+    compile project(':fragmentation')
+}

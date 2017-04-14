@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="huxley" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.huxley.wii.wii.model.bean.Song" />
+        <mapping class="com.huxley.wii.wii.model.bean.Beat" />
+        <mapping class="com.huxley.wii.wii.model.bean.Note" />
+    </list>
+
+    <storage value="external" />
+
+</litepal>

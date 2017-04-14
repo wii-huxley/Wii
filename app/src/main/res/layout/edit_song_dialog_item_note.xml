@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_high"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_point"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_high"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_m"
+        android:visibility="invisible"
+        tools:text="8"/>
+
+    <ImageView
+        android:id="@+id/iv_low"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_note"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_point"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_semitone"
+        android:layout_width="10dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_semitone"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_other"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_point"/>
+</RelativeLayout>

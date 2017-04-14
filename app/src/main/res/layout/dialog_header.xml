@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_16_p"
+    android:paddingLeft="@dimen/dp_16_p"
+    android:paddingRight="@dimen/dp_16_p"
+    android:paddingBottom="@dimen/dp_6_p">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_ll"
+        tools:text="主标题"/>
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/regent_gray"
+        android:textSize="@dimen/text_size_s"
+        tools:text="副标题"/>
+</LinearLayout>

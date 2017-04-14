@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">短信轰炸</string>
+    <string name="base_song_name">曲谱名</string>
+    <string name="base_required_field">必填项</string>
+    <string name="base_optional_field">选填项</string>
+    <string name="base_composer">作曲者</string>
+    <string name="base_lyricist">作词者</string>
+    <string name="base_key_signature">调号</string>
+    <string name="base_time_signature">拍号</string>
+
+    <array name="array_note_type">
+        <item>低阶</item>
+        <item>中阶</item>
+        <item>高阶</item>
+    </array>
+
+    <array name="array_note_num">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+    </array>
+
+    <array name="array_key_signatures">
+        <item>1=A</item>
+        <item>1=B</item>
+        <item>1=C</item>
+        <item>1=D</item>
+        <item>1=E</item>
+        <item>1=F</item>
+        <item>1=G</item>
+    </array>
+
+    <array name="array_time_signatures">
+        <item>2/4</item>
+        <item>3/4</item>
+        <item>4/4</item>
+        <item>6/8</item>
+    </array>
+</resources>

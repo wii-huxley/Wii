@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:clipToPadding="false"
+            android:padding="@dimen/dp_5_p"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:transitionGroup="false"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:ignore="UnusedAttribute"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_beat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add"
+            app:layout_anchor="@id/rv_category"
+            app:layout_anchorGravity="bottom|end"/>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/saddle</color>
+    <color name="colorPrimaryDark">@color/jon</color>
+    <color name="colorAccent">@color/gunmetal</color>
+
+
+    <color name="saddle">#5B4D4B</color>
+    <color name="jon">#443C3B</color>
+    <color name="gunmetal">#2F3738</color>
+    <color name="regent_gray">#88989C</color>
+    <color name="dusty_gray">#AD9E9C</color>
+    <color name="loblolly">#BACACE</color>
+</resources>

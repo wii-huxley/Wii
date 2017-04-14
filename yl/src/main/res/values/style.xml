@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="input_box">
+        <item name="text_color_des">@color/color_grey_700</item>
+        <item name="text_color_content">@color/color_grey_500</item>
+        <item name="text_size">@dimen/text_size_m</item>
+        <item name="text_separator">：</item>
+        <item name="android:padding">@dimen/dp_10_p</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="input_box.edit" parent="input_box">
+        <item name="input_box_type">edit</item>
+    </style>
+
+    <style name="input_box.spinner" parent="input_box">
+        <item name="input_box_type">spinner</item>
+    </style>
+
+    <style name="divider_horizontal">
+        <item name="android:background">@color/lily_white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1sp</item>
+    </style>
+    <style name="divider_vertical">
+        <item name="android:background">@color/divider_dark</item>
+        <item name="android:layout_width">1sp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+</resources>
