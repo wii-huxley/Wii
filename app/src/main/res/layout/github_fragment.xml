@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/divider_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar_url"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        tools:src="@mipmap/ic_launcher"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            tools:text="唯一很无敌"/>
+
+                        <TextView
+                            android:id="@+id/tv_github_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            tools:text="wii-huxley"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/divider_horizontal"/>
+
+                <View
+                    style="@style/divider_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <com.huxley.wiitools.view.WiiInput
+                    android:id="@+id/input_repositories"
+                    style="@style/input_box.select"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    app:title_color="@color/black"
+                    app:content_color="@color/black"
+                    app:title="Repositories"/>
+
+                <View style="@style/divider_horizontal"
+                    android:layout_marginLeft="16dp"/>
+
+                <com.huxley.wiitools.view.WiiInput
+                    android:id="@+id/input_stars"
+                    style="@style/input_box.select"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    app:title_color="@color/black"
+                    app:content_color="@color/black"
+                    app:title="Stars"/>
+
+                <View style="@style/divider_horizontal"
+                    android:layout_marginLeft="16dp"/>
+
+                <com.huxley.wiitools.view.WiiInput
+                    android:id="@+id/input_followers"
+                    style="@style/input_box.select"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    app:title_color="@color/black"
+                    app:content_color="@color/black"
+                    app:title="Followers"/>
+
+                <View style="@style/divider_horizontal"
+                    android:layout_marginLeft="16dp"/>
+
+                <com.huxley.wiitools.view.WiiInput
+                    android:id="@+id/input_following"
+                    style="@style/input_box.select"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    app:title_color="@color/black"
+                    app:content_color="@color/black"
+                    app:title="Following"/>
+
+                <View style="@style/divider_horizontal"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

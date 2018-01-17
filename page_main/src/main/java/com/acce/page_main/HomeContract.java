@@ -1,7 +1,7 @@
 package com.acce.page_main;
 
-import com.huxley.wii.yl.page.mvp.MvpPresenter;
-import com.huxley.wii.yl.page.mvp.MvpView;
+import com.huxley.yl.page.mvp.IMvpPresenter;
+import com.huxley.yl.page.mvp.IMvpView;
 
 /**
  * Created by huxley on 2017/4/10.
@@ -9,11 +9,11 @@ import com.huxley.wii.yl.page.mvp.MvpView;
 
 public class HomeContract {
 
-    public interface View extends MvpView {
+    public interface View extends IMvpView {
 
     }
 
-    public static class Present extends MvpPresenter<View> {
+    public static class Present extends IMvpPresenter<View> {
 
     }
 }

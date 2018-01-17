@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">page_login</string>
+
+    <string name="login_hint_input_phone_num">请输入手机号码</string>
+    <string name="login_hint_input_password">请输入密码</string>
+    <string name="login_string_login">登录</string>
+    <string name="login_register">免费注册</string>
+    <string name="login_forget_pwd">忘记密码</string>
+</resources>

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">page_main</string>
+    <string name="home_nav_user_info">个人信息</string>
+    <string name="home_nav_company_manage">公司管理</string>
+    <string name="home_nav_permission_manager">权限管理</string>
+    <string name="home_nav_mod_pwd">修改密码</string>
+    <string name="home_nav_version_update">版本更新</string>
+    <string name="home_nav_logout">退出登录</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+    <integer name="anim_duration_fast">100</integer>
 </resources>

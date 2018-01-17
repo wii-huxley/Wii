@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/aqua_squeeze">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_35_p">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_15_p"
+                android:src="@drawable/ic_animal_32"/>
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_user_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_10_p"
+                        android:src="@drawable/ic_input_phone"/>
+
+                    <EditText
+                        android:id="@+id/et_user_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:hint="输入手机或邮箱号"
+                        android:padding="@dimen/dp_12_p"
+                        android:textColor="@color/light_sea_green"
+                        android:textColorHint="@color/iron"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <View style="@style/divider_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_vcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_10_p"
+                        android:src="@drawable/ic_input_vcode"/>
+
+                    <EditText
+                        android:id="@+id/et_vcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:hint="短信验证码"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/dp_12_p"
+                        android:textColor="@color/light_sea_green"
+                        android:textColorHint="@color/iron"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_send_vcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/color_999"
+                        android:textSize="12sp"
+                        android:text="发送验证码"/>
+                </LinearLayout>
+
+                <View style="@style/divider_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_10_p"
+                        android:src="@drawable/ic_input_pwd"/>
+
+                    <EditText
+                        android:id="@+id/et_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:hint="设置登录密码"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/dp_12_p"
+                        android:textColor="@color/light_sea_green"
+                        android:textColorHint="@color/iron"
+                        android:textSize="14sp"/>
+
+                    <Switch
+                        android:id="@+id/sw_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View style="@style/divider_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10_p"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10_p">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_point"
+                        android:src="@drawable/ic_hook"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_5_p"
+                        android:hint="已阅读并同意《"
+                        android:textColor="@color/aluminum"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="用户服务协议"
+                        android:textColor="@color/light_sea_green"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="》"
+                        android:textColor="@color/aluminum"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <com.huxley.wiitools.view.StateButton
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10_p"
+                    android:layout_marginLeft="@dimen/dp_5_p"
+                    android:layout_marginRight="@dimen/dp_5_p"
+                    android:layout_marginTop="@dimen/dp_20_p"
+                    android:text="确认"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:normalBackgroundColor="@color/light_sea_green"
+                    app:normalStrokeColor="@color/light_sea_green"
+                    app:normalStrokeWidth="@dimen/dp_0_5_p"
+                    app:normalTextColor="@color/white"
+                    app:pressedBackgroundColor="@color/niagara"
+                    app:pressedStrokeColor="@color/light_sea_green"
+                    app:pressedStrokeWidth="@dimen/dp_0_5_p"
+                    app:pressedTextColor="@color/white"
+                    app:round="true"
+                    app:unableBackgroundColor="@color/silver_chalice"
+                    app:unableStrokeColor="@color/light_sea_green"
+                    app:unableStrokeWidth="@dimen/dp_0_5_p"
+                    app:unableTextColor="@color/white"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10_p"
+        android:src="@drawable/ic_back"/>
+</FrameLayout>

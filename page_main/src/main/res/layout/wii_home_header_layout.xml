@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="?colorPrimary"
+             android:orientation="vertical"
+             android:padding="16dp"
+             android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/iv_user_photo"
+        android:layout_width="@dimen/dp_45_p"
+        android:layout_height="@dimen/dp_45_p"
+        android:layout_marginTop="@dimen/dp_10_p"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_user_default" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="未登录"
+        android:layout_marginTop="@dimen/dp_60_p"
+        android:padding="5dp"
+        android:transitionName="loginTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+</FrameLayout>

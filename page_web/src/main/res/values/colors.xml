@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/color_1abc9c</color>
+    <color name="colorPrimaryDark">@color/color_16a086</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_e8f1f5">#e8f1f5</color>
+    <color name="color_1abc9c_5">#501abc9c</color>
+    <color name="color_1abc9c">#1ABC9C</color>
+    <color name="color_16a086">#16A086</color>
+    <color name="color_ac">#ACACAE</color>
+    <color name="color_c">#CCCCCC</color>
+    <color name="color_9">#999999</color>
+    <color name="color_f2">#F2F2F2</color>
+
+
+    <color name="finestWhite10">#1AFFFFFF</color>
+    <color name="finestWhite20">#33FFFFFF</color>
+    <color name="finestWhite30">#4DFFFFFF</color>
+
+    <color name="finestGray10">#1AD2D2D2</color>
+    <color name="finestGray20">#33D2D2D2</color>
+
+    <color name="finestBlack05">#0D202020</color>
+    <color name="finestBlack10">#1A202020</color>
+    <color name="finestBlack20">#33202020</color>
+    <color name="finestBlack30">#4D202020</color>
+    <color name="finestBlack40">#66202020</color>
+
+    <color name="finestWhite">#FFFFFF</color>
+    <color name="finestBlack">#000000</color>
+    <color name="finestSilver">#A5A5A5</color>
+    <color name="finestGray">#E7E7E7</color>
+</resources>

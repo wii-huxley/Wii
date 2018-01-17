@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="time_rhythm_view">
+        <attr name="color_center" format="color"/>
+        <attr name="color_high" format="color"/>
+        <attr name="color_medium" format="color"/>
+        <attr name="color_low" format="color"/>
+        <attr name="color_empty" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,1 +1,1 @@
-include ':app', ':yl', ':dialogplus', ':fragmentation', ':page_main'
+include ':app', ':page_main', ':page_login', ':page_web', ':page_guide', ':page_gallery'

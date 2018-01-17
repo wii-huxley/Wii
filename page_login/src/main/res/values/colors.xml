@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/light_sea_green</color>
+    <color name="colorPrimaryDark">@color/niagara</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="aqua_squeeze">#E8F1F5</color>
+    <color name="light_sea_green_5">#501ABC9C</color>
+    <color name="light_sea_green">#1ABC9C</color>
+    <color name="niagara">#16A086</color>
+    <color name="silver_chalice">#ACACAE</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="aluminum">#999999</color>
+    <color name="concrete">#F2F2F2</color>
+    <color name="color_999">#999</color>
+</resources>

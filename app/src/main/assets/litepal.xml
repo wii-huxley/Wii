@@ -6,9 +6,9 @@
     <version value="1" />
 
     <list>
-        <mapping class="com.huxley.wii.wii.model.bean.Song" />
-        <mapping class="com.huxley.wii.wii.model.bean.Beat" />
-        <mapping class="com.huxley.wii.wii.model.bean.Note" />
+        <mapping class="com.huxley.wiisample.model.bean.Song" />
+        <mapping class="com.huxley.wiisample.model.bean.Beat" />
+        <mapping class="com.huxley.wiisample.model.bean.Note" />
     </list>
 
     <storage value="external" />

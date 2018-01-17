@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <ScrollView
+        android:background="@color/aqua_squeeze"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_35_p">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_15_p"
+                android:src="@drawable/ic_animal_32"/>
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_user_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_10_p"
+                        android:src="@drawable/ic_input_userid"/>
+
+                    <EditText
+                        android:id="@+id/et_user_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:hint="用户名"
+                        android:padding="@dimen/dp_12_p"
+                        android:textColor="@color/light_sea_green"
+                        android:textColorHint="@color/iron"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <View style="@style/divider_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_10_p"
+                        android:src="@drawable/ic_input_pwd"/>
+
+                    <EditText
+                        android:id="@+id/et_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:hint="登录密码"
+                        android:padding="@dimen/dp_12_p"
+                        android:textColor="@color/light_sea_green"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/iron"
+                        android:textSize="14sp"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View style="@style/divider_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/dp_5_p"
+                    android:paddingBottom="@dimen/dp_10_p"
+                    android:paddingEnd="@dimen/dp_5_p"
+                    android:paddingStart="@dimen/dp_5_p"
+                    android:paddingTop="@dimen/dp_10_p"
+                    android:text="忘记密码"
+                    android:textColor="@color/light_sea_green"
+                    android:textSize="14sp"/>
+
+                <com.huxley.wiitools.view.StateButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10_p"
+                    android:layout_marginLeft="@dimen/dp_5_p"
+                    android:layout_marginRight="@dimen/dp_5_p"
+                    android:text="登录"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:normalBackgroundColor="@color/light_sea_green"
+                    app:normalStrokeColor="@color/light_sea_green"
+                    app:normalStrokeWidth="@dimen/dp_0_5_p"
+                    app:normalTextColor="@color/white"
+                    app:pressedBackgroundColor="@color/niagara"
+                    app:pressedStrokeColor="@color/light_sea_green"
+                    app:pressedStrokeWidth="@dimen/dp_0_5_p"
+                    app:pressedTextColor="@color/white"
+                    app:round="true"
+                    app:unableBackgroundColor="@color/silver_chalice"
+                    app:unableStrokeColor="@color/light_sea_green"
+                    app:unableStrokeWidth="@dimen/dp_0_5_p"
+                    app:unableTextColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10_p"
+                    android:padding="@dimen/dp_10_p"
+                    android:text="创建帐号"
+                    android:textColor="@color/light_sea_green"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        style="@style/divider_horizontal"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_5_p"
+                        android:layout_marginStart="@dimen/dp_5_p"
+                        android:text="OR"
+                        android:textColor="@color/aluminum"
+                        android:textStyle="bold"/>
+
+                    <View
+                        style="@style/divider_horizontal"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <com.huxley.wiitools.view.StateButton
+                    android:id="@+id/btn_login_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20_p"
+                    android:layout_marginLeft="@dimen/dp_5_p"
+                    android:layout_marginRight="@dimen/dp_5_p"
+                    android:drawableStart="@drawable/ic_wechat"
+                    android:paddingEnd="@dimen/dp_15_p"
+                    android:paddingStart="@dimen/dp_15_p"
+                    android:text="微信帐号登录"
+                    android:textSize="16sp"
+                    app:normalBackgroundColor="@color/aqua_squeeze"
+                    app:normalStrokeColor="@color/aluminum"
+                    app:normalStrokeWidth="@dimen/dp_0_5_p"
+                    app:normalTextColor="@color/aluminum"
+                    app:pressedBackgroundColor="@color/concrete"
+                    app:pressedStrokeColor="@color/aluminum"
+                    app:pressedStrokeWidth="@dimen/dp_0_5_p"
+                    app:pressedTextColor="@color/aluminum"
+                    app:round="true"
+                    app:unableBackgroundColor="@color/aqua_squeeze"
+                    app:unableStrokeColor="@color/aluminum"
+                    app:unableStrokeWidth="@dimen/dp_0_5_p"
+                    app:unableTextColor="@color/aluminum"/>
+
+                <com.huxley.wiitools.view.StateButton
+                    android:id="@+id/btn_login_sina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10_p"
+                    android:layout_marginBottom="@dimen/dp_10_p"
+                    android:layout_marginLeft="@dimen/dp_5_p"
+                    android:layout_marginRight="@dimen/dp_5_p"
+                    android:drawableStart="@drawable/ic_sina"
+                    android:paddingEnd="@dimen/dp_15_p"
+                    android:paddingStart="@dimen/dp_15_p"
+                    android:text="微博帐号登录"
+                    android:textSize="16sp"
+                    app:normalBackgroundColor="@color/aqua_squeeze"
+                    app:normalStrokeColor="@color/aluminum"
+                    app:normalStrokeWidth="@dimen/dp_0_5_p"
+                    app:normalTextColor="@color/aluminum"
+                    app:pressedBackgroundColor="@color/concrete"
+                    app:pressedStrokeColor="@color/aluminum"
+                    app:pressedStrokeWidth="@dimen/dp_0_5_p"
+                    app:pressedTextColor="@color/aluminum"
+                    app:round="true"
+                    app:unableBackgroundColor="@color/aqua_squeeze"
+                    app:unableStrokeColor="@color/aluminum"
+                    app:unableStrokeWidth="@dimen/dp_0_5_p"
+                    app:unableTextColor="@color/aluminum"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="@dimen/dp_10_p"
+        android:src="@drawable/ic_close_blue"/>
+</FrameLayout>

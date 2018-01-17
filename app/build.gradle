@@ -5,11 +5,12 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
-        applicationId "com.huxley.wii.yl"
+        applicationId "com.huxley.wiisample"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -27,6 +28,9 @@ android {
     packagingOptions {
         exclude 'META-INF/rxjava.properties'
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -34,7 +38,21 @@ dependencies {
 
     compile "com.jakewharton:butterknife:${butterknife}"
     annotationProcessor "com.jakewharton:butterknife-compiler:${butterknife}"
+    compile 'com.just.agentweb:agentweb:1.2.6'
+    compile 'cn.finalteam:toolsfinal:1.1.5'
+    compile 'com.zzhoujay.richtext:richtext:2.0.9'
 
-    compile project(':yl')
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+    compile 'com.github.Jomes:sand:v0.01'
+    //leakcanary
+    debugCompile "com.squareup.leakcanary:leakcanary-android:${leakcanary}"
+    releaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanary}"
+
+    compile "com.huxley:yl:${yl}"
     compile project(':page_main')
+    compile project(':page_login')
+    compile project(':page_web')
+    compile project(':page_gallery')
+
+    compile files('libs/jsoup-1.9.2.jar')
 }

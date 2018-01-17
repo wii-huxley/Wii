@@ -2,15 +2,16 @@ package com.acce.page_main;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 
-import com.acce.page_main.home.HomeFragment;
-import com.acce.page_main.model.bean.Category;
-import com.huxley.wii.yl.page.mvp.MvpActivity;
+import com.acce.page_main.bean.Category;
+import com.acce.page_main.wiiHome.WiiHomeFragment;
+import com.huxley.fragmentation.anim.DefaultHorizontalAnimator;
+import com.huxley.fragmentation.anim.FragmentAnimator;
+import com.huxley.yl.page.mvp.MvpActivity;
 
 import java.util.ArrayList;
 
-import me.yokeyword.fragmentation.anim.DefaultHorizontalAnimator;
-import me.yokeyword.fragmentation.anim.FragmentAnimator;
 
 /**
  * Created by huxley on 2017/4/10.
@@ -18,31 +19,36 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator;
 public class HomeActivity extends MvpActivity<HomeContract.Present> implements HomeContract.View {
 
     private ArrayList<Category> categories;
+    private Class<?> clazz;
+
 
     @Override
-    public int getLayoutId() {
-        return R.layout.home_activity;
-    }
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    @Override
-    public void init(Bundle savedInstanceState) {
-        super.init(savedInstanceState);
+        setContentView(R.layout.home_activity);
 
         Intent intent = getIntent();
-        if (intent != null && intent.hasExtra("categories")) {
+        if (intent != null && intent.hasExtra("categories") && intent.hasExtra("clazz")) {
             categories = (ArrayList<Category>) intent.getSerializableExtra("categories");
+            clazz = (Class<?>) getIntent().getSerializableExtra("clazz");
         }
         if (categories == null || categories.isEmpty()) {
             throw new RuntimeException(getClass().getSimpleName() + " intent must has categories!");
         }
         if (savedInstanceState == null) {
-            loadRootFragment(R.id.main_container, HomeFragment.newInstance(categories));
+            WiiHomeFragment homeFragment = WiiHomeFragment.newInstance(clazz, categories);
+            loadRootFragment(R.id.main_container, homeFragment);
         }
     }
 
     @Override
+    protected HomeContract.Present getPresenter() {
+        return new HomeContract.Present();
+    }
+
+    @Override
     public FragmentAnimator onCreateFragmentAnimator() {
-        // 设置横向(和安卓4.x动画相同)
         return new DefaultHorizontalAnimator();
     }
 }
